@@ -1,0 +1,14 @@
+<div class="m-0 mt-2 flex-wrap row-column">
+    <app-image [type]="type"></app-image>
+    <img [src]="pic.url" class="img-hov rounded mb-1 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
+        *ngFor="let pic of imageList; let i = index" (click)="selectedIndex=i" data-toggle="modal" data-target="#exampleModal">
+    <div *ngIf="imageList?.length" class="p-0 modal fade bd-example-modal-xl" style="height: 100%; overflow: hidden;" id="exampleModal"
+        tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="d-flex align-items-center h-100 m-auto modal-dialog modal-xl">
+            <div class="modal-content" style="display: block; background-color: black;">
+                <img  style="width: 100%; height: auto;" [src]="imageList[selectedIndex].url">
+                <button data-dismiss="modal" *ngIf="adm.authenticated" class="btn-lg btn-danger btn-block" (click)="delete(selectedIndex)">Удалить</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+table{
+    color: #f8f9fa;
+}
+
+td{
+    transition: all .2s;
+    cursor: pointer;
+}
+.disabled{
+    color: #212529!important;
+}
+td:hover:not(.disabled){
+    color: #9c1e21;
+}
+.active{
+    background-color: hsl(0, 72%, 60%);
+}
+.active:hover{
+    color: black!important;
+}
+.selected{
+    background-color: #84d46b;
+    color: black;
+}

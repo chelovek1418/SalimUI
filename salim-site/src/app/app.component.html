@@ -1,0 +1,93 @@
+<div class="container">
+    <div class="d-flex w-100 mt-2 p-3" style="border-bottom: 4px solid #212121;">
+        <h1 class="mb-0" routerLink="/home"
+          style="margin: 0 auto; font-family: fantasy; color: #dadada; text-transform: uppercase; font-weight: bold; cursor: pointer; text-align: center;">
+          perepel <span style="color:#9c1e21;">ink</span></h1>
+      </div>
+  <nav class="mt-0 navbar navbar-expand-lg navbar-dark" style="min-width: 240px; border-bottom: 4px solid #212121;">
+    <!-- <a class="navbar-brand" routerLink="/home">Salim Tattoo <img src="assets/img/tattoo_machine.png"
+        style="width: 30px; height: 30px; cursor: pointer;"></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="flex: auto; border:none;">
+      <i class="prime-a fas fa-bars" style="color: #dadada;"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav w-100 d-flex justify-content-around">
+        <li class="nav-item">
+          <a class="prime-a nav-link" style="cursor: pointer; color: #dadada;" routerLink="/portfolio"  routerLinkActive="class-name" routerLinkActiveOptions="{exact:true}"><i class="fas fa-briefcase"></i> Портфолио</a>
+        </li>
+        <li class="nav-item">
+          <a class="prime-a nav-link" style="cursor: pointer; color: #dadada;" routerLink="/sketches"  routerLinkActive="class-name" routerLinkActiveOptions="{exact:true}"><i class="fas fa-images"></i> Эскизы</a>
+        </li>
+        <li class="nav-item">
+          <a class="prime-a nav-link" style="cursor: pointer; color: #dadada;" routerLink="/about"  routerLinkActive="class-name" routerLinkActiveOptions="{exact:true}"><i class="fas fa-star"></i> О себе</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="prime-a nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color: #dadada;">
+            <i class="far fa-id-card"></i> Контакты
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" style="background-color: black;" aria-labelledby="navbarDropdown">
+            <a class="second-a dropdown-item" style="cursor:pointer; color: #dadada;"><i class="fas fa-phone-alt"></i>
+            +380(99)325-03-66</a>
+            <a class="second-a dropdown-item" target="_blank" href="https://www.instagram.com/perepel.ink_tattoo/"
+              style="color: #dadada;"><i class="fab fa-instagram"></i> Instagram</a>
+            <a class="second-a dropdown-item" target="_blank" href="https://t.me/perepel_ink" style="color: #dadada;"><i
+                class="fab fa-telegram"></i> Telegram</a>
+            <a class="second-a dropdown-item" href="#" style="color: #dadada;"><i class="fas fa-envelope-square"></i> salim@gmail.com</a>
+            <div class="dropdown-divider"></div>
+            <a class="second-a dropdown-item" target="_blank" style="color: #dadada;"
+              href="https://2gis.ua/kharkov/geo/15481759374281269/36.450236%2C49.893414?m=36.45044%2C49.893446%2F19.91"><i
+                class="fas fa-map-marked-alt"></i> Харьковская область,<br/> пос. Докучаевское,<br/>
+              Cтуденческий Городок, 42</a>
+          </div>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+    </div>
+  </nav>
+  <div class="d-flex w-100 mb-5 p-3" style="border-bottom: 4px solid #212121;">
+      <p class="mb-0"
+        style="margin: 0 auto; color: #dadada; font-weight: bold;">
+        Пн-Пт - 10:00-20:00</p>
+    </div>
+  <router-outlet class="row d-flex"></router-outlet>
+  <div class="w-100 mt-5 pt-3 d-flex flex-wrap" style="border-top: 4px solid #212121;">
+    <div>
+      LOGO
+    </div>
+    <div class="flex-grow-1 mb-2">
+      <h4
+        style="font-family: fantasy;text-align: center; color: #9c1e21; text-transform: uppercase;">
+        come get tattoo</h4>
+      <a target="_blank"
+        href="https://2gis.ua/kharkov/geo/15481759374281269/36.450236%2C49.893414?m=36.45044%2C49.893446%2F19.91"
+        style="color: #dadada;"><i class="fas fa-map-marked-alt"></i> Харьковская область, пос. Докучаевское,<br/>
+        Cтуденческий Городок, 42</a>
+      <h4 class="mt-2"
+        style="font-family: fantasy; text-align: center; color: #9c1e21; text-transform: uppercase;">
+        any questions?</h4>
+      <a style="color: #dadada;"><i class="fas fa-phone-alt"></i>+380(99)325-03-66</a><br />
+      <a target="_blank" href="https://www.instagram.com/perepel.ink_tattoo/" style="color: #dadada;"><i
+          class="fab fa-instagram"></i> Instagram</a><br />
+      <a target="_blank" href="https://t.me/perepel_ink" style="color: #dadada;"><i class="fab fa-telegram"></i>
+        Telegram</a><br />
+      <a href="#" style="color: #dadada;"><i class="fas fa-envelope-square"></i> salim@gmail.com</a>
+    </div>
+    <div class="m-auto" id="map" style="width:300px; height:200px"></div>
+  </div>
+  <div class="w-100 mt-4 mb-3 p-3" style="border-top: 4px solid #212121; border-bottom: 4px solid #212121;">
+    <h5 class="mb-0"
+      style="font-family: monospace; text-align: center; color: #505050; text-transform: uppercase; font-weight: bold;">
+      © {{date}} | {{title}} | All Rights Reserved</h5>
+  </div>
+  <div class="w-100 mt-1 mb-2">
+      <p class="mb-0"
+        style="text-align:end; color: #505050;">
+        made by <a style="text-decoration: none;" href="https://www.instagram.com/d_chelyshev/" target="_blank">chelik</a></p>
+    </div>
+</div>

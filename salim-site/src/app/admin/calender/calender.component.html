@@ -1,0 +1,21 @@
+<table class="w-100">
+    <thead class="border-bottom border-white">
+        <tr>
+            <th>Пн</th>
+            <th>Вт</th>
+            <th>Ср</th>
+            <th>Чт</th>
+            <th>Пт</th>
+            <th>Сб</th>
+            <th>Вс</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let week of calendar">
+            <td (click)="select(day.value)" *ngFor="let day of week.days" [class.disabled]="day.disabled" [class.selected]="day.selected" class="rounded-pill" [class.active]="day.active">
+                <span >{{day.value | moment:'DD'}}</span>
+            </td>
+        </tr>
+    </tbody>
+</table>

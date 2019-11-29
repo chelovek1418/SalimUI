@@ -1,0 +1,16 @@
+<div *ngIf="adm.authenticated" class="card" style="background-color: black;">
+    <div class="card-body">
+        <div class="text-center" style="cursor: pointer;" (click)="fileUploader.click()">
+            <i *ngIf="imgSrc==null" class="mr-2 ml-2 fas fa-9x fa-plus"></i>
+            <img class="w-100" *ngIf="imgSrc!==null" [src]="imgSrc">
+        </div>
+        <input type="file" accept="image/*" style="display: none;" [(ngModel)]="imageUrl" #fileUploader
+            (change)="showPreview($event)">
+    </div>
+    <div *ngIf="imgSrc!==null">
+        <button style="float: right;" [attr.disabled]="isSubmited?'':null" type="submit" class="mr-1 mb-1 btn btn-dark btn-outline-light ml-auto"
+            (click)="reset()">Отмена</button>
+        <button style="float: right;" [attr.disabled]="isSubmited?'':null" type="submit" class="mr-1 mb-1 btn btn-dark btn-outline-light ml-auto"
+            (click)="onSubmit()">Загрузить</button>
+    </div>
+</div>

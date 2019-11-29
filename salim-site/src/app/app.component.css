@@ -1,0 +1,25 @@
+h1:focus {
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+a:focus{
+    outline: none;
+}
+.second-a:hover{
+    background-color: #2b2b2b;
+}
+.second-a:focus{
+    background-color: #2b2b2b;
+}
+.prime-a:hover{
+    color: #9c1e21!important;
+}
+
+.prime-a{
+    font-weight: bold;
+}
+.class-name{
+    color:#9c1e21!important;
+}

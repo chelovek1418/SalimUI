@@ -1,0 +1,11 @@
+<p class="d-flex align-items-center justify-content-center">
+
+    <i class="mr-2 fas fa-chevron-left" (click)="go(-1)" style="cursor: pointer; color:#f8f9fa"></i>
+
+    <span style="color:#f8f9fa">
+        {{dateService.date | async | moment }}
+    </span>
+
+    <i class="ml-2 fas fa-chevron-right" (click)="go(1)" style="cursor: pointer; color:#f8f9fa"></i>
+
+</p>
